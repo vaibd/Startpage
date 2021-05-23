@@ -1,0 +1,136 @@
+* {
+	transition: 0.2s ease-in-out;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--bg-dark: #131313;
+	--bg-dark2: #2e3133;
+	--fg-dark: #dfdff2;
+	--bg-light: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+	--bg-light2: #f9f9f9;
+	--fg-light: #6f798c;
+	--green: #70b791;
+	--magenta: #db8e9d;
+	--yellow: #c9c76b;
+	--cyan: #78b3c5;
+	--font: 'xos4 Terminus', sans-serif;
+}
+
+body {
+	font-family: var(--font);
+}
+
+.dark {
+	background-color: var(--bg-dark);
+	color: var(--fg-dark);
+}
+
+.light {
+	background-image: var(--bg-light);
+	color: var(--fg-light);
+}
+
+button {
+	color: var(--fg-dark);
+	font-family: var(--font);
+	font-size: 12px;
+	text-transform: uppercase;
+	position: absolute;
+	right: 0;
+	cursor: pointer;
+	margin: 2em 2em 0 0;
+	padding: 0.8em 1.5em;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+	-moz-appearance: none;
+}
+
+.dark button {
+	background-color: var(--cyan);
+	color: var(--bg-dark);
+}
+
+.light button {
+	background-color: var(--magenta);
+}
+
+button:hover {
+	background-color: var(--yellow);
+}
+
+#box {
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container {
+	height: 8em;
+	width: 5em;
+	padding: 3em;
+	padding-top: 2em;
+	margin: 3%;
+	border-radius: 15px;
+	box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+.container:hover {
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.24);
+}
+
+.dark .container {
+	background-color: var(--bg-dark2);
+}
+
+.light .container {
+	background-color: var(--bg-light2);
+}
+
+header {
+	padding-bottom: 8px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+a,
+a:visited {
+	text-decoration: none;
+}
+
+.dark a,
+.dark a:visited {
+	color: var(--fg-dark);
+}
+
+.light a,
+.light a:visited {
+	color: var(--fg-light);
+}
+
+.social a:hover,
+.social header {
+	color: var(--magenta);
+}
+
+.dev a:hover,
+.dev header {
+	color: var(--yellow);
+}
+
+.other a:hover,
+.other header {
+	color: var(--cyan);
+}
+
+@media (max-width: 620px) {
+	.container {
+		padding: 1.5em;
+		margin: 0;
+		border-radius: 0;
+		box-shadow: none;
+	}
+}
