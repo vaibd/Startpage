@@ -1,3 +1,3 @@
 Newtab page
 
-vaibd.github.io
+https://vaibd.github.io/
