@@ -1,3 +1,2 @@
 Newtab page
-
-https://vaibd.github.io/
+A simple minimal start page for firefox instead of their default feed app.
